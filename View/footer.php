@@ -19,10 +19,10 @@
                             </tr>
                         </table>
                     </div>
-                </footer>  
-            </div>            
-        </div>                      
-    </div>    
+                </footer>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="Assets/js/jquery-3.3.1.slim.min.js"></script>
 <script src="Assets/js/bootstrap.min.js"></script>
