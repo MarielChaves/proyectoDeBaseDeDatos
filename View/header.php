@@ -13,7 +13,7 @@
         <link href="Assets/css/estiloFooter.css" rel="stylesheet">
         <link href="Assets/css/StylesFCS.css" rel="stylesheet">
         <script src="Assets/js/fontawesome-all.js" type="text/javascript"></script>
-        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
     </head>
 
     <body style="color: #193155">
@@ -25,7 +25,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <?php 
+                    <?php
                     if(isset($_SESSION['Iniciada'])){?>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" style="color: white;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -44,7 +44,7 @@
                         </div>
                     </li>
                     <?php }?>
-                    
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="titleContactanos" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Contáctanos
@@ -56,16 +56,16 @@
                         </div>
                     </li>
                 </ul>
-                
+
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item active">
                         <a class="nav-link" id="titleRegistrar" href="index.php?c=Usuario&a=Registrar"><i class="fas fa-user-md"></i> Regístrate<span class="sr-only">(current)</span></a>
                     </li>
-                    
+
                     <li class="nav-item active">
                         <a class="nav-link" id="titleSesion" href="index.php?c=Login&a=Autenticar"><i class="fas fa-sign-in-alt"></i> <?php echo isset($_SESSION['Iniciada']) ? 'Cerrar Sesion' : 'Iniciar Sesion';?><span class="sr-only">(current)</span></a>
                     </li>
-                    
+
                 </ul>
             </div>
         </nav>
