@@ -18,7 +18,7 @@
 
     <body style="color: #193155">
         <nav class="navbar navbar-expand-lg" id="contTitleClinica">
-            <a class="navbar-brand" id="titleClinica" href="index.php?c=Home" ><i class="fas fa-heartbeat"></i> Clinica FCS</a>
+            <a class="navbar-brand" id="titleClinica" href="index.php?c=Home" ><i class="fas fa-heartbeat"></i> Celulares Liberia</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
