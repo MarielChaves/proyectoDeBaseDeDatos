@@ -5,7 +5,7 @@ session_start();
 require_once 'Model/database.php';
 
 $sesionInit = false;
-$controller = 'login';
+$controller = 'Home';
 
 if (isset($_SESSION['iniciada'])) {
     $sesionInit = true;
@@ -32,7 +32,7 @@ if ($sesionInit || strcmp($controller, "login") === 0) {
         call_user_func(array($controller, $accion));
     }
 }else{
-    $controller = "login";
+    $controller = "home";
     require_once "controller/$controller.controller.php";
     $controller = ucwords($controller) . 'Controller';
     $controller = new $controller;
