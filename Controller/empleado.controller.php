@@ -56,7 +56,7 @@ class EmpleadoController {
 
     public function Eliminar() {
         $this->model->Eliminar($_POST['id']);
-        header('Location: index.php?c=empleado');
+        header('Location: index.php?c=Empleado');
     }
 
 }
