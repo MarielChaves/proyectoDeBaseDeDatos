@@ -61,7 +61,7 @@ class Empleado{
                                 $data->Nombre,
                                 $data->Apellidos,
                                 $data->Sexo,
-                                $data->telefono,
+                                $data->Telefono,
                                 $data->Tipo,
                                 $data->Clave,
                                 $data->idEmpleado
@@ -102,7 +102,7 @@ class Empleado{
                                 $data->idEmpleado,
                                 $data->Nombre,
                                 $data->Apellidos,
-                                $data->telefono,
+                                $data->Telefono,
                                 $data->Tipo,
                                 $data->Clave
                             )
