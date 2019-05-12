@@ -4,7 +4,7 @@
         <div>
             <div>
                 <footer class="text-center well" id="inicioFooter">
-                    <p id="derechosReservados">Clinica FCS 2018 &copy; Todos los derechos reservados</p>
+                    <p id="derechosReservados">Celulares Liberia 2019 &copy; Todos los derechos reservados</p>
                     <div>
                         <table id="tablaFooter">
                             <tr>
