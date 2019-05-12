@@ -22,11 +22,11 @@ if (isset($_GET['error'])) {
         </div>
     <div class="form-group">
         <label>Identificacion</label>
-        <input type="text" name="Identificacion" value="" class="form-control" placeholder="Ingrese un nombre de usuario" data-validacion-tipo="requerido|min:3" />
+        <input type="text" name="identificacion" value="" class="form-control" placeholder="Ingrese un nombre de usuario" data-validacion-tipo="requerido|min:3" />
     </div>
     <div class="form-group">
         <label>Clave</label>
-        <input type="password" name="Clave" value="" class="form-control" placeholder="Ingrese su clave" data-validacion-tipo="requerido|min:4" />
+        <input type="password" name="clave" value="" class="form-control" placeholder="Ingrese su clave" data-validacion-tipo="requerido|min:4" />
     </div>
     <div class="text-right">
        <br><br>
