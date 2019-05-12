@@ -11,7 +11,7 @@ class EmpleadoController {
 
     public function Index() {
         require_once 'view/header.php';
-        require_once 'view/emplerio/emplerio.php';
+        require_once 'view/empleado/empleado.php';
         require_once 'view/footer.php';
     }
 
