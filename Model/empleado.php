@@ -51,8 +51,9 @@ class Empleado{
                 nombre = ?,
                 apellidos  = ?,
                 telefono = ?,
-                clave  = ?,
                 tipo  = ?
+                clave  = ?,
+
                 WHERE idEmpleado = ?";
 
             $this->pdo->prepare($sql)
