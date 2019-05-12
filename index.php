@@ -17,7 +17,7 @@ if ($sesionInit || strcmp($controller, "login") === 0) {
 // Todo esta lógica hara el papel de un FrontController
     if (!isset($_REQUEST['c'])) {
         require_once "controller/$controller.controller.php";
-        $controller = ucwords($controller) . 'Controller';
+        $controller = ucwords($controller).'Controller';
         $controller = new $controller;
         $controller->Index();
     } else {
@@ -27,7 +27,7 @@ if ($sesionInit || strcmp($controller, "login") === 0) {
 
         // Instanciamos el controlador
         require_once "controller/$controller.controller.php";
-        $controller = ucwords($controller) . 'Controller';
+        $controller = ucwords($controller).'Controller';
         $controller = new $controller;
 
         // Llama la accion
@@ -36,7 +36,7 @@ if ($sesionInit || strcmp($controller, "login") === 0) {
 }else{
     $controller = "login";
     require_once "controller/$controller.controller.php";
-    $controller = ucwords($controller) . 'Controller';
+    $controller = ucwords($controller).'Controller';
     $controller = new $controller;
     $controller->Index();
 }
