@@ -4,6 +4,8 @@ session_start();
 // put your code here
 require_once 'Model/database.php';
 
+
+
 $sesionInit = false;
 $controller = 'home';
 
