@@ -5,13 +5,13 @@ session_start();
 require_once 'Model/database.php';
 
 $sesionInit = false;
-$controller = 'Home';
+$controller = 'home';
 
 if (isset($_SESSION['iniciada'])) {
     $sesionInit = true;
 }
 
-if ($sesionInit || strcmp($controller, "login") === 0) {
+if ($sesionInit || strcmp($controller, "Home") === 0) {
 // Todo esta lógica hara el papel de un FrontController
     if (!isset($_REQUEST['c'])) {
         require_once "controller/$controller.controller.php";
