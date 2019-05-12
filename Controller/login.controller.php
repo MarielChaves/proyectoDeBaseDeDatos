@@ -12,19 +12,19 @@ class LoginController {
 
     public function Index() {
         require_once 'view/header.php';
-        require_once 'view/login/login.php';
+        require_once 'view/Login/login.php';
         require_once 'view/footer.php';
     }
 
     public function Guardar() {
         $emple = new empleado();
 
-        $emple->idEmpleado = $_POST['idEmpleado'];
+        $emple->idEmpleado = $_POST['Identificacion'];
         $emple->nombre = $_POST['nombre'];
         $emple->apellidos = $_POST['apellidos'];
         $emple->tipo = $_POST['tipo'];
         $emple->clave = $_POST['clave'];
-        $this->model->Obtener($_POST['idEmpleado']) ?
+        $this->model->Obtener($_POST['Identificacion']) ?
         $this->model->Actualizar($emple) :
         $this->model->Registrar($emple);
 
@@ -32,7 +32,7 @@ class LoginController {
     }
 
     public function Autenticar() {
-        $idEmpleado= $_POST['idEmpleado'];
+        $idEmpleado= $_POST['Identificacion'];
         $clave = $_POST[('clave')];
         $validar = $this->model->Verificar($idEmpleado, $clave);
 

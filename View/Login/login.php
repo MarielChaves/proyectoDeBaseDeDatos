@@ -22,7 +22,7 @@ if (isset($_GET['error'])) {
         </div>
     <div class="form-group">
         <label>Identificacion</label>
-        <input type="text" name="identificacion" value="" class="form-control" placeholder="Ingrese un nombre de usuario" data-validacion-tipo="requerido|min:3" />
+        <input type="text" name="Identificacion" value="" class="form-control" placeholder="Ingrese un nombre de usuario" data-validacion-tipo="requerido|min:3" />
     </div>
     <div class="form-group">
         <label>Clave</label>
