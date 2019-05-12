@@ -32,7 +32,7 @@ class LoginController {
     }
 
     public function Autenticar() {
-        $Identificacion = $_POST['idEmpleado'];
+        $idEmpleado= $_POST['idEmpleado'];
         $Clave = $_POST[('Clave')];
         $validar = $this->model->Verificar($idEmpleado, $Clave);
 

@@ -60,7 +60,6 @@ class Empleado{
                             array(
                                 $data->Nombre,
                                 $data->Apellidos,
-                                $data->Sexo,
                                 $data->Telefono,
                                 $data->Tipo,
                                 $data->Clave,

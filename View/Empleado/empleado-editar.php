@@ -21,17 +21,17 @@
 
         <div class="form-group">
             <label>Nombre</label>
-            <input type="text" name="Nombre" value="<?php echo $emple->Nombre; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" />
+            <input type="text" name="Nombre" value="<?php echo $emple->nombre; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" />
         </div>
 
         <div class="form-group">
             <label>Apellidos</label>
-            <input type="text" name="Apellidos" value="<?php echo $emple->Apellidos; ?>" class="form-control" placeholder="Ingrese su apellidos" data-validacion-tipo="requerido|min:3" />
+            <input type="text" name="Apellidos" value="<?php echo $emple->apellidos; ?>" class="form-control" placeholder="Ingrese su apellidos" data-validacion-tipo="requerido|min:3" />
         </div>
 
         <div class="form-group">
             <label>Telefono</label>
-            <input type="text" name="Telefono" value="<?php echo $emple->Telefono; ?>" class="form-control" placeholder="Ingrese su numero de telefono" data-validacion-tipo="requerido|min:3" />
+            <input type="text" name="Telefono" value="<?php echo $emple->telefono; ?>" class="form-control" placeholder="Ingrese su numero de telefono" data-validacion-tipo="requerido|min:3" />
         </div>
 
         <div class="form-group">
@@ -46,7 +46,7 @@
 
         <div class="form-group">
             <label>Clave</label>
-            <input type="text" name="Clave" value="<?php echo $emple->Clave; ?>" class="form-control" placeholder="Ingrese su clave" data-validacion-tipo="requerido|min:4" minlength="6" />
+            <input type="text" name="Clave" value="<?php echo $emple->clave; ?>" class="form-control" placeholder="Ingrese su clave" data-validacion-tipo="requerido|min:4" minlength="6" />
         </div>
 
         <div class="text-right">
