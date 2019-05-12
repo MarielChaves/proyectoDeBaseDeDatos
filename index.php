@@ -7,13 +7,13 @@ require_once 'Model/database.php';
 
 
 $sesionInit = false;
-$controller = 'home';
+$controller = 'login';
 
 if (isset($_SESSION['iniciada'])) {
     $sesionInit = true;
 }
 
-if ($sesionInit || strcmp($controller, "Home") === 0) {
+if ($sesionInit || strcmp($controller, "login") === 0) {
 // Todo esta lógica hara el papel de un FrontController
     if (!isset($_REQUEST['c'])) {
         require_once "controller/$controller.controller.php";
@@ -34,7 +34,7 @@ if ($sesionInit || strcmp($controller, "Home") === 0) {
         call_user_func(array($controller, $accion));
     }
 }else{
-    $controller = "home";
+    $controller = "login";
     require_once "controller/$controller.controller.php";
     $controller = ucwords($controller) . 'Controller';
     $controller = new $controller;
