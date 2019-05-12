@@ -4,11 +4,11 @@ class Empleado{
 
     private $pdo;
     public $idEmpleado;
-    public $Nombre;
-    public $Apellidos;
-    public $Telefono;
-    public $Tipo;
-    public $Clave;
+    public $nombre;
+    public $apellidos;
+    public $telefono;
+    public $tipo;
+    public $clave;
 
 
     public function __CONSTRUCT() {
@@ -58,11 +58,11 @@ class Empleado{
             $this->pdo->prepare($sql)
                     ->execute(
                             array(
-                                $data->Nombre,
-                                $data->Apellidos,
-                                $data->Telefono,
-                                $data->Tipo,
-                                $data->Clave,
+                                $data->nombre,
+                                $data->apellidos,
+                                $data->telefono,
+                                $data->tipo,
+                                $data->clave,
                                 $data->idEmpleado
                             )
             );
@@ -71,12 +71,12 @@ class Empleado{
         }
     }
 
-    public function Verificar($idEmpleado, $Clave) {
+    public function Verificar($idEmpleado, $clave) {
 
         try {
             $sql = "SELECT  idEmpleado, clave FROM empleado WHERE idEmpleado = ? AND clave = ?";
             $stm = $this->pdo->prepare($sql);
-            $stm->execute(array($idEmpleado, $Clave));
+            $stm->execute(array($idEmpleado, $clave));
 
             $empleadoDatos = $stm->fetch(PDO::FETCH_OBJ);
             if ($empleadoDatos == NULL) {
@@ -99,11 +99,11 @@ class Empleado{
                     ->execute(
                             array(
                                 $data->idEmpleado,
-                                $data->Nombre,
-                                $data->Apellidos,
-                                $data->Telefono,
-                                $data->Tipo,
-                                $data->Clave
+                                $data->nombre,
+                                $data->apellidos,
+                                $data->telefono,
+                                $data->tipo,
+                                $data->clave
                             )
             );
         } catch (Exception $e) {

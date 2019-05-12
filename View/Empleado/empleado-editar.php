@@ -38,9 +38,9 @@
             <label>Tipo de empleado:</label>
             <select name="Tipo" class="form-control">
                 <option value="">No seleccionado</option>
-                <option <?php echo $emple->Tipo == 'Tecnico(a)' ? 'selected' : ''; ?> value="Tecnico(a)">Tecnico(a)</option>
-                <option <?php echo $emple->Tipo == 'Dependiente' ? 'selected' : ''; ?> value="Dependiente">Dependiente</option>
-                <option <?php echo $emple->Tipo == 'Miselaneo(a)' ? 'selected' : ''; ?> value="Miselaneo(a)">Miselaneo(a)</option>
+                <option <?php echo $emple->tipo == 'Tecnico(a)' ? 'selected' : ''; ?> value="Tecnico(a)">Tecnico(a)</option>
+                <option <?php echo $emple->tipo == 'Dependiente' ? 'selected' : ''; ?> value="Dependiente">Dependiente</option>
+                <option <?php echo $emple->tipo == 'Miselaneo(a)' ? 'selected' : ''; ?> value="Miselaneo(a)">Miselaneo(a)</option>
             </select>
         </div>
 
