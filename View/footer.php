@@ -8,9 +8,9 @@
                     <div>
                         <table id="tablaFooter">
                             <tr>
-                                <td id="colTablaFooter"><a id="styleLinkFooter" class="linkNav" href="https://www.facebook.com/clinicabiblica/">Facebook</a></td>
+                                <td id="colTablaFooter"><a id="styleLinkFooter" class="linkNav" href="https://www.facebook.com/">Facebook</a></td>
                                 <td id="colTablaFooter"><i class="fab fa-facebook-f"></i></td>
-                                <td id="colTablaFooter"><a id="styleLinkFooter" class="linkNav" href="https://twitter.com/clinicabiblica?lang=es">Twitter</a></td>
+                                <td id="colTablaFooter"><a id="styleLinkFooter" class="linkNav" href="https://twitter.com/?lang=es">Twitter</a></td>
                                 <td id="colTablaFooter"><i class="fab fa-twitter"></i></td>
                                 <td id="colTablaFooter"><a id="styleLinkFooter" class="linkNav" href="https://www.instagram.com/?hl=es-la">Instagram</a></td>
                                 <td id="colTablaFooter"><i class="fab fa-instagram"></i></td>
