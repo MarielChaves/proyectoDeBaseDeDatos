@@ -60,7 +60,7 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item active">
-                        <a class="nav-link" id="titleRegistrar" href="index.php?c=Usuario&a=Registrar"><i class="fas fa-user-md"></i> Regístrate<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" id="titleRegistrar" href="index.php?c=Empleado&a=Registrar"><i class="fas fa-user-md"></i> Regístrate<span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item active">
