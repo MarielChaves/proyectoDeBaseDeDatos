@@ -53,7 +53,6 @@ class Empleado{
                 telefono = ?,
                 tipo  = ?
                 clave  = ?,
-
                 WHERE idEmpleado = ?";
 
             $this->pdo->prepare($sql)
