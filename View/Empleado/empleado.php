@@ -39,12 +39,12 @@
                 <?php $valor = $emple->idEmpleado; ?>
                 <tr>
                     <td><input id="marginRadio" type=radio name=id value=<?php echo $emple->idEmpleado; ?> ></td>
-                    <td><?php echo $emple->Identificacion; ?></td>
-                    <td><?php echo $emple->Nombre; ?></td>
-                    <td><?php echo $emple->Apellidos; ?></td>
-                    <td><?php echo $emple->Telefono; ?></td>
-                    <td><?php echo $emple->Tipo; ?></td>
-                    <td><?php echo $emple->Clave; ?></td>
+                    <td><?php echo $emple->idEmpleado; ?></td>
+                    <td><?php echo $emple->nombre; ?></td>
+                    <td><?php echo $emple->apellidos; ?></td>
+                    <td><?php echo $emple->telefono; ?></td>
+                    <td><?php echo $emple->tipo; ?></td>
+                    <td><?php echo $emple->clave; ?></td>
                 </tr>
             <?php endforeach; ?>
         <script src="assets/js/buscador.js"></script>
