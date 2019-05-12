@@ -43,11 +43,11 @@ class EmpleadoController {
         $emple = new empleado();
 
         $emple->idEmpleado = $_POST['Identificacion'];
-        $emple->Nombre = $_POST['Nombre'];
-        $emple->Telefono = $_POST['Telefono'];
-        $emple->Apellidos = $_POST['Apellidos'];
-        $emple->Tipo = $_POST['Tipo'];
-        $emple->Clave = $_POST['Clave'];
+        $emple->nombre = $_POST['Nombre'];
+        $emple->telefono = $_POST['Telefono'];
+        $emple->apellidos = $_POST['Apellidos'];
+        $emple->tipo = $_POST['Tipo'];
+        $emple->clave = $_POST['Clave'];
         $this->model->Obtener($_POST['Identificacion']) ?
                         $this->model->Actualizar($emple) :
                         $this->model->Registrar($emple);
