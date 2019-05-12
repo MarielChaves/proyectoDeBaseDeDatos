@@ -18,11 +18,8 @@
 
     <body style="color: #193155">
         <nav class="navbar navbar-expand-lg" id="contTitleClinica">
-<<<<<<< HEAD
+
             <a class="navbar-brand" id="titleClinica" href="index.php?c=Home" ><i class="fas fa-mobile-alt"></i> Celulares Liberia</a>
-=======
-            <a class="navbar-brand" id="titleClinica" href="index.php?c=Home" ><i class="fas fa-heartbeat"></i> Clinica FCS</a>
->>>>>>> 9e939f66dfe35bcefabc6f700c063613c1138c94
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
