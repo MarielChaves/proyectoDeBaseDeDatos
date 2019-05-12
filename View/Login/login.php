@@ -26,7 +26,7 @@ if (isset($_GET['error'])) {
     </div>
     <div class="form-group">
         <label>Clave</label>
-        <input type="password" name="Clave" value="" class="form-control" placeholder="Ingrese su clave" data-validacion-tipo="requerido|min:4" />
+        <input type="password" name="clave" value="" class="form-control" placeholder="Ingrese su clave" data-validacion-tipo="requerido|min:4" />
     </div>
     <div class="text-right">
        <br><br>
