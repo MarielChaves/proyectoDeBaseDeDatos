@@ -42,12 +42,13 @@ class EmpleadoController {
     public function Guardar() {
         $emple = new empleado();
 
-        $emple->idEmpleado = $_POST['idEmpleado'];
-        $emple->Nombre = $_POST['nombre'];
+        $emple->idEmpleado = $_POST['Identificacion'];
+        $emple->Nombre = $_POST['Nombre'];
+        $emple->Telefono = $_POST['Telefono'];
         $emple->Apellidos = $_POST['Apellidos'];
-        $emple->Tipoemplerio = $_POST['Tipo'];
+        $emple->Tipo = $_POST['Tipo'];
         $emple->Clave = $_POST['Clave'];
-        $this->model->Obtener($_POST['idEmpleado']) ?
+        $this->model->Obtener($_POST['Identificacion']) ?
                         $this->model->Actualizar($emple) :
                         $this->model->Registrar($emple);
 

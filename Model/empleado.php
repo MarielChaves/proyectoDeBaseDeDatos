@@ -35,7 +35,7 @@ class Empleado{
     public function Obtener($idEmpleado) {
         try {
             $stm = $this->pdo
-                    ->prepare("SELECT * FROM usuario WHERE Identificacion = ?");
+                    ->prepare("SELECT * FROM empleado WHERE idEmpleado = ?");
 
 
             $stm->execute(array($idEmpleado));
@@ -90,7 +90,7 @@ class Empleado{
         }
     }
 
-    public function Registrar(Usuario $data) {
+    public function Registrar(Empleado $data) {
         try {
             $sql = "INSERT INTO empleado(idEmpleado, nombre, apellidos, telefono, tipo, clave)
 		        VALUES (?, ?, ?, ?, ?, ?)";
