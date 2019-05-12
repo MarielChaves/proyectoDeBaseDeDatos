@@ -51,7 +51,7 @@ class EmpleadoController {
                         $this->model->Actualizar($emple) :
                         $this->model->Registrar($emple);
 
-        header('Location: index.php?c=empleado');
+        header('Location: index.php?c=Empleado');
     }
 
     public function Eliminar() {

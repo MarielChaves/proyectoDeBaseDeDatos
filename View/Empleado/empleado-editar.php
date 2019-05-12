@@ -9,7 +9,7 @@
 <div class="container">
     <div>
         <ol class="breadcrumb">
-            <li><a class="moduloTitle" href="?c=Usuario">Modulo de Empleados</a></li>
+            <li><a class="moduloTitle" href="?c=Empleado">Modulo de Empleados</a></li>
             <li id="NewEdit" class="active"><?php echo $emple->idEmpleado != null ? 'Editar Registro' : 'Nuevo Registro'; ?></li>
         </ol>
     </div>
@@ -57,7 +57,7 @@
 
 <script>
     $(document).ready(function () {
-        $("#frm-usuario").submit(function () {
+        $("#frm-empleado").submit(function () {
             return $(this).validate();
 
         });
