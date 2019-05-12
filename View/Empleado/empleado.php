@@ -35,7 +35,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($this->model->Listar() as $user): ?>
+            <?php foreach ($this->model->Listar() as $emple): ?>
                 <?php $valor = $emple->idEmpleado; ?>
                 <tr>
                     <td><input id="marginRadio" type=radio name=id value=<?php echo $emple->idEmpleado; ?> ></td>
@@ -44,7 +44,7 @@
                     <td><?php echo $emple->Apellidos; ?></td>
                     <td><?php echo $emple->Telefono; ?></td>
                     <td><?php echo $emple->Tipo; ?></td>
-                    <td><?php echo $emple->Clave; ?></td>               
+                    <td><?php echo $emple->Clave; ?></td>
                 </tr>
             <?php endforeach; ?>
         <script src="assets/js/buscador.js"></script>
