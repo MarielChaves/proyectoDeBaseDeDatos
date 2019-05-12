@@ -20,10 +20,10 @@ class LoginController {
         $emple = new empleado();
 
         $emple->idEmpleado = $_POST['idEmpleado'];
-        $emple->Nombre = $_POST['nombre'];
-        $emple->Apellidos = $_POST['Apellidos'];
-        $emple->Tipoemplerio = $_POST['Tipo'];
-        $emple->Clave = $_POST['Clave'];
+        $emple->nombre = $_POST['nombre'];
+        $emple->apellidos = $_POST['apellidos'];
+        $emple->tipo = $_POST['tipo'];
+        $emple->clave = $_POST['clave'];
         $this->model->Obtener($_POST['idEmpleado']) ?
         $this->model->Actualizar($emple) :
         $this->model->Registrar($emple);
@@ -33,8 +33,8 @@ class LoginController {
 
     public function Autenticar() {
         $idEmpleado= $_POST['idEmpleado'];
-        $Clave = $_POST[('Clave')];
-        $validar = $this->model->Verificar($idEmpleado, $Clave);
+        $clave = $_POST[('clave')];
+        $validar = $this->model->Verificar($idEmpleado, $clave);
 
         if (isset($_SESSION['Iniciada'])){
             session_destroy();
