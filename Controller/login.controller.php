@@ -1,7 +1,7 @@
 <?php
 
 include_once 'model/empleado.php';
-
+//yo soy mariel
 class LoginController {
 
     private $model;
